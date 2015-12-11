@@ -2,9 +2,10 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a [router-link]="['/Dashboard/Overview']">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
+            <li [class.active]="getLinkStyle('/dashboard/overview')"><a [router-link]="['/Dashboard/Overview']">Overview <span class="sr-only">(current)</span></a></li>
+            <li [class.active]="getLinkStyle('/dashboard/all')"><a [router-link]="['/Dashboard/All']">All Elements</a></li>
+            <li [class.active]="getLinkStyle('/dashboard/iron')"><a [router-link]="['/Dashboard/Iron']">Iron Element</a></li>
+            <li [class.active]="getLinkStyle('/dashboard/paper')"><a [router-link]="['/Dashboard/Paper']">Paper Element</a></li>
             <li><a href="#">Export</a></li>
           </ul>
           <ul class="nav nav-sidebar">
@@ -20,6 +21,9 @@
             <li><a href="">Another nav item</a></li>
           </ul>
         </div>
-        <router-outlet></router-outlet>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <router-outlet></router-outlet>
+        </div>
       </div>
     </div>

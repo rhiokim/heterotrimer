@@ -4,7 +4,7 @@ import {RouteParams} from 'angular2/router';
 
 @Component({
   selector: 'overview',
-  templateUrl: './app/components/overview/overview.html'
+  templateUrl: './app/site/overview/overview.html'
 })
 
 export class OverviewComponent {

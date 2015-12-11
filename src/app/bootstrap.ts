@@ -2,7 +2,7 @@ import {Component, bootstrap, CORE_DIRECTIVES, bind, provide} from 'angular2/ang
 import {ROUTER_PROVIDERS, APP_BASE_HREF, HashLocationStrategy, LocationStrategy} from 'angular2/router'
 import {HTTP_PROVIDERS} from 'angular2/http'
 
-import {AppComponent} from './components/app';
+import {AppComponent} from './site/app';
 
 bootstrap(AppComponent, [
   ROUTER_PROVIDERS,

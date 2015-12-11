@@ -14,7 +14,7 @@ declare var System:any;
 @Component(
 {
   selector: 'app',
-  templateUrl: './app/components/app.html',
+  templateUrl: './app/site/app.html',
   directives: [ ROUTER_DIRECTIVES ]
 })
 
